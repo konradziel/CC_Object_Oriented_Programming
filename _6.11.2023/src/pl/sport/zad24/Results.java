@@ -20,7 +20,7 @@ public class Results {
     }
 
     public void setResults(int[] results) {
-        this.results = results;
+        this.results = results.clone();
     }
 
     public String getFirstName() {
@@ -32,11 +32,13 @@ public class Results {
     }
 
     public int[] getResults() {
-        return results;
+        return results.clone();
     }
 
     public void addResult(int index, int result) {
-        this.results[index] = result;
+        int[] newResults = results.clone();
+        newResults[index] = result;
+        this.results = newResults;
     }
 
     public double averageResult()
