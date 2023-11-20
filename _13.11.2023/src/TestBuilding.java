@@ -1,4 +1,5 @@
-package pl.edu.uwm.zad11;
+import pl.edu.uwm.zad11.Building;
+import pl.edu.uwm.zad11.House;
 
 public class TestBuilding {
     public static void main(String[] args) {

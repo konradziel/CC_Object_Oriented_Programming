@@ -1,4 +1,5 @@
-package pl.edu.uwm.zad2;
+import pl.edu.uwm.zad2.Book;
+import pl.edu.uwm.zad2.Ebook;
 
 public class TestBook {
     public static void main(String[] args) {

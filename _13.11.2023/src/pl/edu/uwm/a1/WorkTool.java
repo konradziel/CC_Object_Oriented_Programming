@@ -1,6 +1,6 @@
 package pl.edu.uwm.a1;
 
-abstract class WorkTool {
+public abstract class WorkTool {
     private String name;
     private int productionYear;
 

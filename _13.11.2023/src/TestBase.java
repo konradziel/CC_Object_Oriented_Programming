@@ -1,4 +1,5 @@
-package pl.edu.uwm.zad7;
+import pl.edu.uwm.zad7.Base;
+import pl.edu.uwm.zad7.Child;
 
 public class TestBase {
     public static void main(String[] args) {

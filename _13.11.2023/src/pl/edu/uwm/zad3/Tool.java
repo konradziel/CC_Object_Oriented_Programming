@@ -7,4 +7,8 @@ public class Tool {
         this.name = name;
     }
 
+    public static Tool createTool(String name) {
+        return new Tool(name);
+    }
+
 }
