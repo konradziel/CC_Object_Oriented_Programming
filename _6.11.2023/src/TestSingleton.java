@@ -1,4 +1,4 @@
-package pl.instance.zad3;
+import pl.instance.zad3.Singleton;
 
 public class TestSingleton {
 

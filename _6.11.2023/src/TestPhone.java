@@ -1,4 +1,4 @@
-package tech.telco.zad11;
+import tech.telco.zad11.Phone;
 
 public class TestPhone {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.adventure.akt;
+import com.adventure.akt.Excursion;
 
 public class TestExcursion {
     public static void main(String[] args) {

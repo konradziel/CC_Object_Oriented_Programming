@@ -1,4 +1,4 @@
-package pl.people.zad1;
+import pl.people.zad1.Person;
 
 public class TestPerson {
     public static void main(String[] args) {

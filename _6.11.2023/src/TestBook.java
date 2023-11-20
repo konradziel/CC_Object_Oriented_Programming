@@ -1,4 +1,4 @@
-package pl.bookstore.zad14;
+import pl.bookstore.zad14.Book;
 
 public class TestBook {
     public static void main(String[] args) {

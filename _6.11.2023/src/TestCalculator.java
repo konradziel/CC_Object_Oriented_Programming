@@ -1,4 +1,4 @@
-package com.calc.zad5;
+import com.calc.zad5.Calculator;
 
 public class TestCalculator {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package net.cars.zad3;
+import net.cars.zad3.Car;
 
 public class TestCar {
     public static void main(String[] args) {

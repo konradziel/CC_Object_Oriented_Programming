@@ -1,4 +1,4 @@
-package pl.sport.zad24;
+import pl.sport.zad24.Results;
 
 public class TestResults {
     public static void main(String[] args) {
