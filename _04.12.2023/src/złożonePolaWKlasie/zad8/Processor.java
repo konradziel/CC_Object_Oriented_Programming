@@ -1,11 +1,13 @@
 package złożonePolaWKlasie.zad8;
 
+import java.util.Objects;
+
 public class Processor {
     private int frequency;
     private int cores;
-    private int manufacturer;
+    private String manufacturer;
 
-    public Processor(int frequency, int cores, int manufacturer) {
+    public Processor(int frequency, int cores, String manufacturer) {
         this.frequency = frequency;
         this.cores = cores;
         this.manufacturer = manufacturer;
@@ -27,11 +29,11 @@ public class Processor {
         this.cores = cores;
     }
 
-    public int getManufacturer() {
+    public String getManufacturer() {
         return manufacturer;
     }
 
-    public void setManufacturer(int manufacturer) {
+    public void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
 
@@ -52,14 +54,14 @@ public class Processor {
 
         if (frequency != processor.frequency) return false;
         if (cores != processor.cores) return false;
-        return manufacturer == processor.manufacturer;
+        return Objects.equals(manufacturer, processor.manufacturer);
     }
 
     @Override
     public int hashCode() {
         int result = frequency;
         result = 31 * result + cores;
-        result = 31 * result + manufacturer;
+        result = 31 * result + (manufacturer != null ? manufacturer.hashCode() : 0);
         return result;
     }
 }
