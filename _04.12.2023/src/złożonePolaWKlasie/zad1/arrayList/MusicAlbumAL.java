@@ -32,7 +32,7 @@ public class MusicAlbumAL {
     }
 
     public ArrayList<Double> getRatings() {
-        return ratings;
+        return new ArrayList<>(ratings);
     }
 
     public void setRatings(ArrayList<Double> ratings) {

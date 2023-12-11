@@ -31,7 +31,7 @@ public class MusicAlbum {
     }
 
     public double[] getRatings() {
-        return ratings;
+        return ratings.clone();
     }
 
     public void setRatings(double[] ratings) {

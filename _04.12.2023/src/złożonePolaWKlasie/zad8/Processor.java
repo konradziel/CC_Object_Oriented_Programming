@@ -7,6 +7,15 @@ public class Processor {
     private int cores;
     private String manufacturer;
 
+    public Processor() {
+    }
+
+    public Processor(Processor processor) {
+        this.frequency = processor.frequency;
+        this.cores = processor.cores;
+        this.manufacturer = processor.manufacturer;
+    }
+
     public Processor(int frequency, int cores, String manufacturer) {
         this.frequency = frequency;
         this.cores = cores;

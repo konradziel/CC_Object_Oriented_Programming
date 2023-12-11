@@ -10,7 +10,7 @@ public class Computer {
     public Computer(String brand, String model, Processor processor) {
         this.brand = brand;
         this.model = model;
-        this.processor = processor;
+        this.processor = (processor == null) ? new Processor() : new Processor(processor);
     }
 
     public String getBrand() {
@@ -30,11 +30,11 @@ public class Computer {
     }
 
     public Processor getProcessor() {
-        return processor;
+        return new Processor(processor);
     }
 
     public void setProcessor(Processor processor) {
-        this.processor = processor;
+        this.processor = (processor == null) ? new Processor() : new Processor(processor);
     }
 
     @Override
