@@ -11,5 +11,8 @@ public class TestMusicAlbumAL {
         MusicAlbumAL ma1 = new MusicAlbumAL("asdd", "jkj", lista);
 
         System.out.println(ma1.toString());
+        ma1.addRating(2.3);
+        ma1.removeRating(4.5);
+        System.out.println(ma1.toString());
     }
 }

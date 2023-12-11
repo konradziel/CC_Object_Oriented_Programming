@@ -65,4 +65,37 @@ public class MusicAlbum {
         result = 31 * result + Arrays.hashCode(ratings);
         return result;
     }
+
+    public void addRating(double newValue){
+        double[] temp = new double[ratings.length+1];
+        for(int i=0; i<ratings.length; i++){
+            temp[i] = ratings[i];
+        }
+        temp[ratings.length] = newValue;
+        ratings = temp;
+    }
+
+    public void removeRating(double valueToRemove) {
+        boolean found = false;
+        for (double rating : ratings) {
+            if (rating == valueToRemove) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found) {
+            double[] temp = new double[ratings.length - 1];
+            int newIndex = 0;
+            for (int i = 0; i < ratings.length; i++) {
+                if (ratings[i] != valueToRemove) {
+                    temp[newIndex] = ratings[i];
+                    newIndex++;
+                }
+            }
+            ratings = temp;
+        } else {
+            System.out.println("Ocena " + valueToRemove + " nie została znaleziona.");
+        }
+    }
 }

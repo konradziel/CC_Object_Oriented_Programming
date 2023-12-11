@@ -66,5 +66,21 @@ public class MusicAlbumAL {
         result = 31 * result + (ratings != null ? ratings.hashCode() : 0);
         return result;
     }
+
+    public void addRating(double newValue) {
+        ArrayList<Double> temp = new ArrayList<>(ratings);
+        temp.add(newValue);
+        ratings = temp;
+    }
+
+    public void removeRating(double valueToRemove) {
+        if (ratings.contains(valueToRemove)) {
+            ArrayList<Double> temp = new ArrayList<>(ratings);
+            temp.remove(valueToRemove);
+            ratings = temp;
+        } else {
+            System.out.println("Ocena " + valueToRemove + " nie została znaleziona.");
+        }
+    }
 }
 

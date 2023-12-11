@@ -16,5 +16,10 @@ public class TestMusicAlbum {
         ma1.setRatings(ratings2);
         System.out.println(Arrays.toString(ma1.getRatings()));
         System.out.println(Arrays.toString(ratings));
+
+        ma1.addRating(2.3);
+        ma1.removeRating(4.5);
+        ma1.removeRating(4.43);
+        System.out.println(ma1.toString());
     }
 }
