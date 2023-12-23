@@ -11,4 +11,11 @@ public class SeniorDeveloper extends Developer implements Cloneable {
     public SeniorDeveloper clone() throws CloneNotSupportedException {
         return (SeniorDeveloper) super.clone();
     }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +
+                " bonus=" + bonus +
+                "} " + super.toString();
+    }
 }

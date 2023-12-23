@@ -14,4 +14,13 @@ public class Developer implements Cloneable {
     public Developer clone() throws CloneNotSupportedException {
         return (Developer) super.clone();
     }
+
+    @Override
+    public String toString() {
+        return getClass().getSimpleName() +
+                " name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                '}';
+    }
 }
