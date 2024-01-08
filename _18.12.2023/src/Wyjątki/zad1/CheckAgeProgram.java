@@ -17,7 +17,7 @@ public class CheckAgeProgram {
             throw new IllegalArgumentException("Age muste be equal or greater than 18.");
         }
         else {
-            System.out.println("Age is equal or greater than 18.");
+            ("Age is equal or greater than 18.");
         }
     }
 }
