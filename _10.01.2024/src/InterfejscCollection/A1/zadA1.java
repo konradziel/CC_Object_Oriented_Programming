@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
-public class A1 {
+public class zadA1 {
     public static void main(String[] args) {
         ArrayList<Integer> list1 = new ArrayList<>();
         list1.add(1);
