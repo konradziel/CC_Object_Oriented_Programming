@@ -13,18 +13,9 @@ public class zadC1 {
         list2.add(4);
         list2.add(5);
 
-
+        Alg3 alg = new Alg3();
         System.out.println("List 1: " + list1);
         System.out.println("List 2: " + list2);
-        System.out.println("Merged List: " + mergeLists(list1, list2));
-    }
-
-    public static <T> ArrayList<T> mergeLists(ArrayList<T> al1, ArrayList<T> al2) {
-        ArrayList<T> mergedList = new ArrayList<>(al1.size() + al2.size());
-
-        mergedList.addAll(al1);
-        mergedList.addAll(al2);
-
-        return mergedList;
+        System.out.println("Merged List: " + alg.mergeLists(list1, list2));
     }
 }
