@@ -2,7 +2,7 @@ package ZBNTSHashSet.E2;
 
 import java.util.HashSet;
 
-public class zadE2 {
+public class ZadE2 {
     public static void main(String[] args) {
         HashSet<Double> h1 = new HashSet<>();
         h1.add(1.2);

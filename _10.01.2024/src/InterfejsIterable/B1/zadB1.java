@@ -1,6 +1,6 @@
 package InterfejsIterable.B1;
 
-public class zadB1 {
+public class ZadB1 {
     public static void main(String[] args) {
         Alg2 alg = new Alg2();
         java.util.List<String> myList = java.util.Arrays.asList("one", "two", "three", "four", "five");

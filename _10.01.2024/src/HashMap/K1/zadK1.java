@@ -2,7 +2,7 @@ package HashMap.K1;
 
 import java.util.HashMap;
 
-public class zadK1 {
+public class ZadK1 {
     public static void main(String[] args) {
         HashMap<String, Integer> map = new HashMap<>();
         map.put("abc", 34);

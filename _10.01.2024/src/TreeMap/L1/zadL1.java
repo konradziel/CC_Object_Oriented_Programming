@@ -1,10 +1,8 @@
 package TreeMap.L1;
 
-import com.sun.source.tree.Tree;
-
 import java.util.TreeMap;
 
-public class zadL1 {
+public class ZadL1 {
     public static void main(String[] args) {
         TreeMap<String, Double> t1 = new TreeMap<>();
         t1.put("tt", 45.6);

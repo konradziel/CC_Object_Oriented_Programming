@@ -2,7 +2,7 @@ package ListaPowiązanaLinkedList.D1;
 
 import java.util.LinkedList;
 
-public class zadD1 {
+public class ZadD1 {
     public static void main(String[] args) {
         LinkedList<Integer> palindromeList = new LinkedList<>();
         palindromeList.add(1);

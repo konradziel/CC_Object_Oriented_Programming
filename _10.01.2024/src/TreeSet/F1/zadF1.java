@@ -1,10 +1,8 @@
 package TreeSet.F1;
 
-import com.sun.source.tree.Tree;
-
 import java.util.TreeSet;
 
-public class zadF1 {
+public class ZadF1 {
     public static void main(String[] args) {
         TreeSet<Integer> originalSetI = new TreeSet<>();
         originalSetI.add(1);

@@ -1,8 +1,6 @@
 package ZadanieNaAktywność.Wariant461;
 
-import java.util.ArrayList;
-
-public class w461 {
+public class W461 {
     public static void main(String[] args) {
         Integer[] tabInteger = {1, 3, -4, 9, 5, -6};
         String[] tabString = {"abc", "def", "ghi", "jkl"};
