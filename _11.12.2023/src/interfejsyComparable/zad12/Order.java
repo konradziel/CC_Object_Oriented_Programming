@@ -1,5 +1,7 @@
 package interfejsyComparable.zad12;
 
+import java.util.Objects;
+
 public class Order implements Comparable<Order>{
     private String productName;
     private int quantity;
@@ -23,7 +25,7 @@ public class Order implements Comparable<Order>{
 
     @Override
     public int compareTo(Order obj) {
-        if(obj.unitPrice == this.unitPrice){
+        if(Objects.equals(obj.unitPrice, this.unitPrice)){
             return Integer.compare(this.quantity, obj.quantity);
         }
         return Double.compare(obj.unitPrice, this.unitPrice);
