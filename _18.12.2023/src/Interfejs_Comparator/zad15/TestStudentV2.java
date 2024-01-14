@@ -18,19 +18,13 @@ public class TestStudentV2 {
             System.out.println(elem);
         }
 
-        Arrays.sort(tab, new AverageGradeComparator());
+        Arrays.sort(tab, new AverageGradeComparator().thenComparing(new IdComparator()));
 
-        System.out.println("Po sortowaniu po średniej ocen:");
+        System.out.println("Po sortowaniu:");
         for(var elem:tab) {
             System.out.println(elem);
         }
 
-        Arrays.sort(tab, new IdComparator());
-
-        System.out.println("Po sortowaniu po identyfikatorze:");
-        for(var elem:tab) {
-            System.out.println(elem);
-        }
     }
 
 }
